@@ -1,0 +1,49 @@
+. bloco-principal {
+    posição : absoluto;
+    superior :  50 % ;
+    esquerda :  50 % ;
+    transformar :  traduzir ( -50 % ,  -50 % );
+
+    borda :  1 px cinza sólido;
+    box-shadow :  2 px  2 px  2 px  # 888888 ;
+
+    preenchimento :  10 px ;
+}
+
+formulário {
+    exibição : flexível;
+    flex-direction : coluna;
+
+    preenchimento :  15 px ;
+
+    font-family :  'Courier New' , Courier , monospace;
+    tamanho da fonte :  20 px ;
+
+}
+
+ entrada de formulário {
+    esboço : não definido;
+
+    preenchimento :  10 px ;
+    margem inferior :  10 px ;
+
+    borda :  0 ;
+    border-bottom :  1 px solid rgb ( 200 , 200 , 200 );
+    
+}
+
+ entrada de formulário [ tipo = enviar ] {
+    cor de fundo :  # 5b3c8b ;
+    cor : branco;
+
+    transição :  0,5 s ;
+
+    font-family :  'Courier New' , Courier , monospace;
+    tamanho da fonte :  20 px ;
+}
+
+ entrada de formulário [ tipo = enviar ] : passe o mouse {
+    cor de fundo : branco;
+    cor :  # 5b3c8b ;
+ 
+}
