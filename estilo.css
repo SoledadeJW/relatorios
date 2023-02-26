@@ -1,49 +1,49 @@
-. bloco-principal {
-    posição : absoluto;
-    superior :  50 % ;
-    esquerda :  50 % ;
-    transformar :  traduzir ( -50 % ,  -50 % );
+.bloco-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    borda :  1 px cinza sólido;
-    box-shadow :  2 px  2 px  2 px  # 888888 ;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px #888888;
 
-    preenchimento :  10 px ;
+    padding: 10px;
 }
 
-formulário {
-    exibição : flexível;
-    flex-direction : coluna;
+form { 
+    display: flex;
+    flex-direction: column;
 
-    preenchimento :  15 px ;
+    padding: 15px;
 
-    font-family :  'Courier New' , Courier , monospace;
-    tamanho da fonte :  20 px ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 
 }
 
- entrada de formulário {
-    esboço : não definido;
+form input {
+    outline: unset;
 
-    preenchimento :  10 px ;
-    margem inferior :  10 px ;
+    padding: 10px;
+    margin-bottom: 10px;
 
-    borda :  0 ;
-    border-bottom :  1 px solid rgb ( 200 , 200 , 200 );
+    border: 0;
+    border-bottom: 1px solid rgb(200,200,200);
     
 }
 
- entrada de formulário [ tipo = enviar ] {
-    cor de fundo :  # 5b3c8b ;
-    cor : branco;
+form input[type=submit] {
+    background-color: #5b3c8b;
+    color: white;
 
-    transição :  0,5 s ;
+    transition: .5s;
 
-    font-family :  'Courier New' , Courier , monospace;
-    tamanho da fonte :  20 px ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
- entrada de formulário [ tipo = enviar ] : passe o mouse {
-    cor de fundo : branco;
-    cor :  # 5b3c8b ;
+form input[type=submit]:hover {
+    background-color: white;
+    color: #5b3c8b;
  
 }
